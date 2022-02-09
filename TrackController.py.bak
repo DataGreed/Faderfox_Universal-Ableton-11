@@ -1,11 +1,11 @@
 import Live
 
-from .FaderfoxComponent import FaderfoxComponent
-from .ParamMap import ParamMap
-from .consts import *
+from FaderfoxComponent import FaderfoxComponent
+from ParamMap import ParamMap
+from consts import *
 
 # noinspection PyCallingNonCallable
-from .helpers import is_rack, switch_monitor_track
+from helpers import is_rack, switch_monitor_track
 
 
 class TrackController(FaderfoxComponent):
@@ -167,7 +167,7 @@ class TrackController(FaderfoxComponent):
         self.on_device_chain_visible()
 
         tracks = self.helper.get_all_visible_tracks_in_range()
-        for (ranged_idx, track) in zip(list(range(0, len(tracks))), tracks):
+        for (ranged_idx, track) in zip(range(0, len(tracks)), tracks):
             # self.log("send all track status %s %s" % (idx, track))
             self.send_track_launch_status(track, ranged_idx)
 

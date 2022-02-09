@@ -8,7 +8,7 @@ def relative_to_absolute(cc_value):
 
 
 def find_tuple_idx(_tuple, obj):
-    for i in range(0, len(_tuple)):
+    for i in xrange(0, len(_tuple)):
         if not cmp(_tuple[i], obj):
             return i
     return 0

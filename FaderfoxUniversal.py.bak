@@ -2,11 +2,11 @@ import sys
 
 import Live
 
-from .FaderfoxHelper import FaderfoxHelper
-from .ParamMap import ParamMap
-from .TrackController import TrackController
-from .TransportController import TransportController
-from .consts import *
+from FaderfoxHelper import FaderfoxHelper
+from ParamMap import ParamMap
+from TrackController import TrackController
+from TransportController import TransportController
+from consts import *
 
 
 # from Tracing import Traced

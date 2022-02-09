@@ -1,4 +1,4 @@
-from .FaderfoxUniversal import FaderfoxUniversal
+from FaderfoxUniversal import FaderfoxUniversal
 
 
 def create_instance(c_instance):

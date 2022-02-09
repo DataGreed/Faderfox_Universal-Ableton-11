@@ -37,7 +37,7 @@ class FaderfoxComponent:
         args2 = []
         for i in range(0, len(args)):
             args2 += [args[i].__str__()]
-            if isinstance(args2[i], str):
+            if isinstance(args2[i], unicode):
                 args2[i] = args2[i].encode("latin-1")
         str = fmt % tuple(args2)
         return self.log(str)

@@ -1,5 +1,5 @@
-from .consts import LAST_TRACK, BASE_TRACK
-from .helpers import find_tuple_idx, find_elt_idx
+from consts import LAST_TRACK, BASE_TRACK
+from helpers import find_tuple_idx, find_elt_idx
 
 
 class FaderfoxHelper:
